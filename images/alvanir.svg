@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264.61 58.97">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 1.2em;
+      }
+
+      .cls-2 {
+        font-family: Obvia-Book, Obvia;
+        font-size: 18.89px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: #f0ede8;
+      }
+
+      .cls-5 {
+        letter-spacing: -.23em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.16em;
+      }
+
+      .cls-7 {
+        letter-spacing: 1.18em;
+      }
+
+      .cls-4 {
+        font-family: GoodTimesRg-Regular, 'Good Times';
+        font-size: 38.11px;
+      }
+    </style>
+  </defs>
+  <g id="Camada_1-2" data-name="Camada 1">
+    <g>
+      <g>
+        <text class="cls-4" transform="translate(60.82 32.91)"><tspan x="0" y="0">A</tspan><tspan class="cls-6" x="37.69" y="0">l</tspan><tspan class="cls-5" x="58.47" y="0">v</tspan><tspan x="87.55" y="0">anir</tspan></text>
+        <text class="cls-2" transform="translate(61.35 54.28)"><tspan class="cls-1" x="0" y="0">IM</tspan><tspan class="cls-7" x="65.2" y="0">Ó</tspan><tspan class="cls-1" x="99.49" y="0">VEI</tspan><tspan x="193.47" y="0">S</tspan></text>
+      </g>
+      <g>
+        <polygon class="cls-3" points="45.17 .01 12.79 .01 40.82 58.97 45.17 58.97 45.17 .01"/>
+        <polygon class="cls-3" points="24.57 42.42 2.41 42.42 2.41 48.63 27.48 48.63 32.4 58.97 0 58.97 0 .01 4.55 .01 24.57 42.42"/>
+      </g>
+    </g>
+  </g>
+</svg>
