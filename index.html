@@ -9,22 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-  <style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}:root{--black:#0a0a0a;--off:#111;--border:#222;--muted:#555;--light:#aaa;--white:#f0ede8;--accent:#c8b89a;--serif:'Cormorant Garamond',Georgia,serif;--sans:'Syne',sans-serif}html{scroll-behavior:smooth}body{background:var(--black);color:var(--white);font-family:var(--sans);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;cursor:none}.cursor{position:fixed;top:0;left:0;z-index:9999;width:8px;height:8px;background:var(--white);border-radius:50%;pointer-events:none;transform:translate(-50%,-50%);transition:transform .15s ease,width .3s ease,height .3s ease,background .3s ease}.cursor.hover{width:40px;height:40px;background:transparent;border:1px solid var(--accent)}nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:28px 48px;mix-blend-mode:normal}nav::after{content:'';position:absolute;bottom:0;left:48px;right:48px;height:1px;background:var(--border)}.nav-logo{display:flex;align-items:center;gap:10px;font-family:var(--sans);font-weight:700;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--white);text-decoration:none;background:transparent}.nav-logo img{background:transparent}.nav-logo svg{width:18px;height:18px;fill:var(--accent)}.nav-links{display:flex;gap:36px;align-items:center}.nav-links a{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--light);text-decoration:none;transition:color .25s}.nav-links a:hover{color:var(--white)}.lang-toggle{background:0;border:1px solid var(--border);color:var(--light);padding:6px 14px;font-family:var(--sans);font-size:11px;letter-spacing:.12em;text-transform:uppercase;cursor:none;transition:all .25s}.lang-toggle:hover{border-color:var(--accent);color:var(--accent)}#hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:120px 48px 80px;gap:60px;position:relative;overflow:hidden}.hero-noise{position:absolute;inset:0;z-index:0;opacity:.03;background-image:url("data:image/svg+xml,%3CsvgviewBox='00256256'xmlns='http://www.w3.org/2000/svg'%3E%3Cfilterid='n'%3E%3CfeTurbulencetype='fractalNoise'baseFrequency='0.9'numOctaves='4'stitchTiles='stitch'/%3E%3C/filter%3E%3Crectwidth='100%25'height='100%25'filter='url(%23n)'/%3E%3C/svg%3E");background-size:200px}.hero-left{position:relative;z-index:1}.hero-tag{display:inline-flex;align-items:center;gap:10px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:32px}.hero-tag::before{content:'';width:28px;height:1px;background:var(--accent)}.hero-title strong,.services-title strong{font-weight:700;font-style:italic;color:var(--accent)}.hero-title{font-family:var(--serif);font-size:clamp(48px,5.5vw,84px);font-weight:300;line-height:.95;letter-spacing:-.01em;color:var(--white);margin-bottom:40px}.hero-title em{font-style:italic;color:var(--accent)}.hero-sub{font-size:13px;letter-spacing:.06em;color:var(--light);line-height:1.8;max-width:380px;margin-bottom:52px}.hero-cta{display:inline-flex;align-items:center;gap:14px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--white);text-decoration:none;border-bottom:1px solid var(--border);padding-bottom:8px;transition:all .3s ease}.hero-cta:hover{color:var(--accent);border-color:var(--accent);gap:22px}.hero-cta svg{width:14px;height:14px;stroke:currentColor;fill:none}.hero-right{position:relative;z-index:1;display:flex;flex-direction:column;align-items:flex-end;gap:28px}.hero-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);width:100%;max-width:420px}.stat-item{background:var(--black);padding:28px 24px}.stat-num{font-family:var(--serif);font-size:52px;font-weight:300;line-height:1;color:var(--white);margin-bottom:6px}.stat-label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.hero-avail{display:flex;align-items:center;gap:10px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--light)}.avail-dot{width:7px;height:7px;border-radius:50%;background:#4ade80;box-shadow:0 0 10px #4ade8060;animation:pulse 2s ease-in-out infinite}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}section{padding:120px 48px}.section-line{width:100%;height:1px;background:var(--border);margin:0 48px;width:calc(100% - 96px)}.section-label{display:flex;align-items:center;gap:14px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:60px}.section-label::before{content:attr(data-num);color:var(--muted);font-size:10px}#services{background:var(--off)}.services-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:72px;gap:40px;flex-wrap:wrap}.services-title{font-family:var(--serif);font-size:clamp(40px,5vw,72px);font-weight:300;line-height:1;max-width:520px}.services-title em{font-style:italic;color:var(--accent)}.services-desc{font-size:13px;color:var(--light);max-width:340px;line-height:1.8}.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}.service-card{background:var(--off);padding:40px 32px 36px;display:flex;flex-direction:column;gap:16px;transition:background .3s;position:relative;overflow:hidden}.service-card::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--accent);transition:width .4s ease}.service-card:hover{background:#161616}.service-card:hover::after{width:100%}.service-num{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}.service-name{font-family:var(--serif);font-size:28px;font-weight:400;line-height:1.1;color:var(--white);padding-bottom:12px;border-bottom:1px solid var(--accent)}.service-desc{font-size:14px;color:var(--light);line-height:1.7;flex:1}.service-price{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-top:8px}.work-title{font-family:var(--serif);font-size:clamp(40px,5vw,72px);font-weight:300;margin-bottom:72px;line-height:1}.work-title em{font-style:italic;color:var(--accent)}.work-list{display:flex;flex-direction:column}.work-item{display:grid;grid-template-columns:80px 1fr auto;align-items:center;gap:32px;padding:28px 0;border-bottom:1px solid var(--border);text-decoration:none;color:var(--white);transition:all .3s;position:relative}.work-item:first-child{border-top:1px solid var(--border)}.work-item:hover .work-item-name{color:var(--accent)}.work-item:hover .work-arrow{transform:translate(6px,-6px);color:var(--accent)}.work-item-num{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.work-item-inner{display:flex;flex-direction:column;gap:4px}.work-item-name{font-family:var(--serif);font-size:28px;font-weight:400;transition:color .3s}.work-item-tag{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.work-arrow{font-size:18px;color:var(--muted);transition:all .3s ease}#about{background:var(--off)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}.about-title{font-family:var(--serif);font-size:clamp(40px,4.5vw,64px);font-weight:300;line-height:1.05;margin-bottom:32px}.about-title em{font-style:italic;color:var(--accent)}.about-text{font-size:14px;color:var(--light);line-height:1.9;margin-bottom:16px}.about-right{display:flex;flex-direction:column;gap:24px}.tools-label{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:16px}.tools-list{display:flex;flex-wrap:wrap;gap:8px}.tool-tag{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--light);border:1px solid var(--border);padding:7px 14px}.location-row{display:flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-top:24px;border-top:1px solid var(--border)}#contact{text-align:center;padding:140px 48px}.contact-label{display:inline-flex;align-items:center;gap:14px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:40px}.contact-label::before,.contact-label::after{content:'';display:block;width:40px;height:1px;background:var(--border)}.contact-title{font-family:var(--serif);font-size:clamp(52px,7vw,100px);font-weight:300;line-height:.95;margin-bottom:48px}.contact-title em{font-style:italic;color:var(--accent)}.contact-links{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}.contact-btn{font-family:var(--sans);font-size:12px;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;padding:16px 36px;transition:all .3s}.contact-btn.primary{background:var(--white);color:var(--black)}.contact-btn.primary:hover{background:var(--accent)}.contact-btn.secondary{border:1px solid var(--border);color:var(--light)}.contact-btn.secondary:hover{border-color:var(--accent);color:var(--accent)}footer{padding:28px 48px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border)}.footer-logo{font-family:var(--sans);font-weight:700;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);text-decoration:none}.footer-links{display:flex;gap:28px}.footer-links a{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .25s}.footer-links a:hover{color:var(--white)}.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}.reveal.visible{opacity:1;transform:translateY(0)}.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}.work-card{background:var(--black);text-decoration:none;color:var(--white);display:flex;flex-direction:column;transition:background .3s;position:relative;overflow:hidden}.work-card:hover{background:#161616}.work-card--large{grid-column:span 2}.work-card-img{width:100%;aspect-ratio:16/9;background-color:#1a1a1a;background-size:cover;background-position:center;position:relative;overflow:hidden;transition:transform .5s ease}.work-card--large .work-card-img{aspect-ratio:16/8}.work-card:hover .work-card-img{transform:scale(1.03)}.work-card-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;background:#141414}.work-card-img[style*="url('https"] .work-card-placeholder{display:none}.wcp-num{font-family:var(--serif);font-size:48px;font-weight:300;color:var(--border)}.wcp-hint{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}.work-card-info{padding:20px 24px;display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid var(--border)}.work-card-tag{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:4px}.work-card-name{font-family:var(--serif);font-size:20px;font-weight:400;color:var(--white);transition:color .3s}.work-card:hover .work-card-name{color:var(--accent)}.work-arrow-sm{font-size:16px;color:var(--muted);transition:all .3s ease;flex-shrink:0}.work-card:hover .work-arrow-sm{transform:translate(4px,-4px);color:var(--accent)}.work-card--cta{min-height:180px;border:0}.work-cta-inner{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:40px 24px;border:1px dashed var(--border);margin:0;transition:border-color .3s}.work-card--cta:hover .work-cta-inner{border-color:var(--accent)}.work-cta-label{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--light)}.work-cta-sub{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.about-photo{
-  width: 100%;
-  max-width: 300px;
-  aspect-ratio: 4/5;
-  background: #141414;
-  border: 1px solid var(--border);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  position: relative;
-  overflow: hidden;
-  margin: 0 auto;
-  transition: transform .5s ease, box-shadow .5s ease;
-}
+  <style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}:root{--black:#0a0a0a;--off:#111;--border:#222;--muted:#555;--light:#aaa;--white:#f0ede8;--accent:#c8b89a;--serif:'Cormorant Garamond',Georgia,serif;--sans:'Syne',sans-serif}html{scroll-behavior:smooth}body{background:var(--black);color:var(--white);font-family:var(--sans);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;cursor:none}.cursor{position:fixed;top:0;left:0;z-index:9999;width:8px;height:8px;background:var(--white);border-radius:50%;pointer-events:none;transform:translate(-50%,-50%);transition:transform .15s ease,width .3s ease,height .3s ease,background .3s ease}.cursor.hover{width:40px;height:40px;background:transparent;border:1px solid var(--accent)}nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:28px 48px;mix-blend-mode:normal}nav::after{content:'';position:absolute;bottom:0;left:48px;right:48px;height:1px;background:var(--border)}.nav-logo{display:flex;align-items:center;gap:10px;font-family:var(--sans);font-weight:700;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--white);text-decoration:none;background:transparent}.nav-logo img{background:transparent}.nav-logo svg{width:18px;height:18px;fill:var(--accent)}.nav-links{display:flex;gap:36px;align-items:center}.nav-links a{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--light);text-decoration:none;transition:color .25s}.nav-links a:hover{color:var(--white)}.lang-toggle{background:0;border:1px solid var(--border);color:var(--light);padding:6px 14px;font-family:var(--sans);font-size:11px;letter-spacing:.12em;text-transform:uppercase;cursor:none;transition:all .25s}.lang-toggle:hover{border-color:var(--accent);color:var(--accent)}#hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:120px 48px 80px;gap:60px;position:relative;overflow:hidden}.hero-noise{position:absolute;inset:0;z-index:0;opacity:.03;background-image:url("data:image/svg+xml,%3CsvgviewBox='00256256'xmlns='http://www.w3.org/2000/svg'%3E%3Cfilterid='n'%3E%3CfeTurbulencetype='fractalNoise'baseFrequency='0.9'numOctaves='4'stitchTiles='stitch'/%3E%3C/filter%3E%3Crectwidth='100%25'height='100%25'filter='url(%23n)'/%3E%3C/svg%3E");background-size:200px}.hero-left{position:relative;z-index:1}.hero-tag{display:inline-flex;align-items:center;gap:10px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:32px}.hero-tag::before{content:'';width:28px;height:1px;background:var(--accent)}.hero-title strong,.services-title strong{font-weight:700;font-style:italic;color:var(--accent)}.hero-title{font-family:var(--serif);font-size:clamp(48px,5.5vw,84px);font-weight:300;line-height:.95;letter-spacing:-.01em;color:var(--white);margin-bottom:40px}.hero-title em{font-style:italic;color:var(--accent)}.hero-sub{font-size:13px;letter-spacing:.06em;color:var(--light);line-height:1.8;max-width:380px;margin-bottom:52px}.hero-cta{display:inline-flex;align-items:center;gap:14px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--white);text-decoration:none;border-bottom:1px solid var(--border);padding-bottom:8px;transition:all .3s ease}.hero-cta:hover{color:var(--accent);border-color:var(--accent);gap:22px}.hero-cta svg{width:14px;height:14px;stroke:currentColor;fill:none}.hero-right{position:relative;z-index:1;display:flex;flex-direction:column;align-items:flex-end;gap:28px}.hero-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);width:100%;max-width:420px}.stat-item{background:var(--black);padding:28px 24px}.stat-num{font-family:var(--serif);font-size:52px;font-weight:300;line-height:1;color:var(--white);margin-bottom:6px}.stat-label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.hero-avail{display:flex;align-items:center;gap:10px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--light)}.avail-dot{width:7px;height:7px;border-radius:50%;background:#4ade80;box-shadow:0 0 10px #4ade8060;animation:pulse 2s ease-in-out infinite}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}section{padding:120px 48px}.section-line{width:100%;height:1px;background:var(--border);margin:0 48px;width:calc(100% - 96px)}.section-label{display:flex;align-items:center;gap:14px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:60px}.section-label::before{content:attr(data-num);color:var(--muted);font-size:10px}#services{background:var(--off)}.services-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:72px;gap:40px;flex-wrap:wrap}.services-title{font-family:var(--serif);font-size:clamp(40px,5vw,72px);font-weight:300;line-height:1;max-width:520px}.services-title em{font-style:italic;color:var(--accent)}.services-desc{font-size:13px;color:var(--light);max-width:340px;line-height:1.8}.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}.service-card{background:var(--off);padding:40px 32px 36px;display:flex;flex-direction:column;gap:16px;transition:background .3s;position:relative;overflow:hidden}.service-card::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--accent);transition:width .4s ease}.service-card:hover{background:#161616}.service-card:hover::after{width:100%}.service-num{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}.service-name{font-family:var(--serif);font-size:28px;font-weight:600;line-height:1.1;color:var(--accent)}.service-desc{font-size:14px;color:var(--light);line-height:1.7;flex:1}.service-price{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-top:8px}.work-title{font-family:var(--serif);font-size:clamp(40px,5vw,72px);font-weight:300;margin-bottom:72px;line-height:1}.work-title em{font-style:italic;color:var(--accent)}.work-list{display:flex;flex-direction:column}.work-item{display:grid;grid-template-columns:80px 1fr auto;align-items:center;gap:32px;padding:28px 0;border-bottom:1px solid var(--border);text-decoration:none;color:var(--white);transition:all .3s;position:relative}.work-item:first-child{border-top:1px solid var(--border)}.work-item:hover .work-item-name{color:var(--accent)}.work-item:hover .work-arrow{transform:translate(6px,-6px);color:var(--accent)}.work-item-num{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.work-item-inner{display:flex;flex-direction:column;gap:4px}.work-item-name{font-family:var(--serif);font-size:28px;font-weight:400;transition:color .3s}.work-item-tag{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.work-arrow{font-size:18px;color:var(--muted);transition:all .3s ease}#about{background:var(--off)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}.about-title{font-family:var(--serif);font-size:clamp(40px,4.5vw,64px);font-weight:300;line-height:1.05;margin-bottom:32px}.about-title em{font-style:italic;color:var(--accent)}.about-text{font-size:14px;color:var(--light);line-height:1.9;margin-bottom:16px}.about-right{display:flex;flex-direction:column;gap:24px}.tools-label{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:16px}.tools-list{display:flex;flex-wrap:wrap;gap:8px}.tool-tag{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--light);border:1px solid var(--border);padding:7px 14px}.location-row{display:flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-top:24px;border-top:1px solid var(--border)}#contact{text-align:center;padding:140px 48px}.contact-label{display:inline-flex;align-items:center;gap:14px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:40px}.contact-label::before,.contact-label::after{content:'';display:block;width:40px;height:1px;background:var(--border)}.contact-title{font-family:var(--serif);font-size:clamp(52px,7vw,100px);font-weight:300;line-height:.95;margin-bottom:48px}.contact-title em{font-style:italic;color:var(--accent)}.contact-links{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}.contact-btn{font-family:var(--sans);font-size:12px;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;padding:16px 36px;transition:all .3s}.contact-btn.primary{background:var(--white);color:var(--black)}.contact-btn.primary:hover{background:var(--accent)}.contact-btn.secondary{border:1px solid var(--border);color:var(--light)}.contact-btn.secondary:hover{border-color:var(--accent);color:var(--accent)}footer{padding:28px 48px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border)}.footer-logo{font-family:var(--sans);font-weight:700;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);text-decoration:none}.footer-links{display:flex;gap:28px}.footer-links a{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .25s}.footer-links a:hover{color:var(--white)}.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}.reveal.visible{opacity:1;transform:translateY(0)}.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}.work-card{background:var(--black);text-decoration:none;color:var(--white);display:flex;flex-direction:column;transition:background .3s;position:relative;overflow:hidden}.work-card:hover{background:#161616}.work-card--large{grid-column:span 2}.work-card-img{width:100%;aspect-ratio:16/9;background-color:#1a1a1a;background-size:cover;background-position:center;position:relative;overflow:hidden;transition:transform .5s ease}.work-card--large .work-card-img{aspect-ratio:16/8}.work-card:hover .work-card-img{transform:scale(1.03)}.work-card-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;background:#141414}.work-card-img[style*="url('https"] .work-card-placeholder{display:none}.wcp-num{font-family:var(--serif);font-size:48px;font-weight:300;color:var(--border)}.wcp-hint{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}.work-card-info{padding:20px 24px;display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid var(--border)}.work-card-tag{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:4px}.work-card-name{font-family:var(--serif);font-size:20px;font-weight:400;color:var(--white);transition:color .3s}.work-card:hover .work-card-name{color:var(--accent)}.work-arrow-sm{font-size:16px;color:var(--muted);transition:all .3s ease;flex-shrink:0}.work-card:hover .work-arrow-sm{transform:translate(4px,-4px);color:var(--accent)}.work-card--cta{min-height:180px;border:0}.work-cta-inner{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:40px 24px;border:1px dashed var(--border);margin:0;transition:border-color .3s}.work-card--cta:hover .work-cta-inner{border-color:var(--accent)}.work-cta-label{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--light)}.work-cta-sub{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.about-photo{width:260px;height:260px;border-radius:50%;overflow:hidden;border:2px solid var(--accent);flex-shrink:0;background:#141414}
 .about-photo:hover{
   transform: scale(1.03);
   box-shadow: 0 20px 60px rgba(0,0,0,0.4);
@@ -45,7 +30,7 @@
   left: 0;
   transition: transform .1s linear;
   will-change: transform;
-}.about-photo-hint{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-align:center;padding:0 24px;position:relative;z-index:1}.about-photo-icon{font-size:32px;color:var(--border);position:relative;z-index:1}.logofolio-header{padding:72px 48px 56px;border-bottom:1px solid var(--border);display:flex;justify-content:center}.logofolio-quote{caret-color:transparent;user-select:none;
+}.about-photo-hint{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-align:center;padding:0 24px;position:relative;z-index:1}.about-photo-icon{font-size:32px;color:var(--border);position:relative;z-index:1}.logofolio-header{padding:72px 48px 56px;border-bottom:1px solid var(--border);display:flex;justify-content:center}.logofolio-quote{
   font-family: var(--serif);
   font-size: clamp(22px, 3vw, 40px);
   font-weight: 300;
@@ -142,7 +127,7 @@
           <div class="stat-label" data-pt="Marcas criadas" data-en="Brands created">Marcas criadas</div>
         </div>
         <div class="stat-item">
-          <div class="stat-num" data-target="5" data-suffix="">0</div>
+          <div class="stat-num" data-target="5" data-suffix="">0</div></div>
           <div class="stat-label" data-pt="Serviços ativos" data-en="Active services">Serviços ativos</div>
         </div>
         <div class="stat-item">
@@ -171,41 +156,343 @@
       </p>
     </div>
     <div class="services-grid reveal" style="transition-delay:.15s">
-      <div class="service-card">
-        <span class="service-num">01</span>
-        <h3 class="service-name" data-pt="Diagnóstico de Marca" data-en="Brand Diagnosis">Diagnóstico de Marca</h3>
-        <p class="service-desc" data-pt="Antes de mudar, entender. Um olhar externo e honesto sobre o que a sua marca comunica hoje, e o que ela deveria comunicar. O ponto de partida para qualquer decisão estratégica." data-en="Before changing, understanding. An honest external look at what your brand communicates today, and what it should. The starting point for any strategic decision.">Antes de mudar, entender. Um olhar externo e honesto sobre o que a sua marca comunica hoje, e o que ela deveria comunicar. O ponto de partida para qualquer decisão estratégica.</p>
-      </div>
-      <div class="service-card">
-        <span class="service-num">02</span>
-        <h3 class="service-name">Naming</h3>
-        <p class="service-desc" data-pt="O nome é o primeiro ativo da sua marca. Aqui ele é tratado como estratégia, não como brainstorm. Pesquisa, conceito e uma entrega que você vai querer registrar." data-en="The name is your brand's first asset. Here it's treated as strategy, not a brainstorm. Research, concept and a delivery you'll want to trademark.">O nome é o primeiro ativo da sua marca. Aqui ele é tratado como estratégia, não como brainstorm. Pesquisa, conceito e uma entrega que você vai querer registrar.</p>
-      </div>
-      <div class="service-card">
-        <span class="service-num">03</span>
-        <h3 class="service-name" data-pt="Marca Essencial" data-en="Essential Brand">Marca Essencial</h3>
-        <p class="service-desc" data-pt="Para quem está começando e quer construir certo desde o início. Uma base estratégica e visual sólida, feita para crescer junto com o negócio." data-en="For those starting out and wanting to build it right from day one. A solid strategic and visual foundation, made to grow with the business.">Para quem está começando e quer construir certo desde o início. Uma base estratégica e visual sólida, feita para crescer junto com o negócio.</p>
-      </div>
-      <div class="service-card">
-        <span class="service-num">04</span>
-        <h3 class="service-name" data-pt="Marca Intermediária" data-en="Intermediate Brand">Marca Intermediária</h3>
-        <p class="service-desc" data-pt="Para negócios que já existem, já vendem, mas sentem que a marca não acompanhou a evolução. Mais profundidade estratégica, mais consistência em todas as frentes." data-en="For businesses that already exist, already sell, but feel the brand hasn't kept up with their growth. More strategic depth, more consistency across the board.">Para negócios que já existem, já vendem, mas sentem que a marca não acompanhou a evolução. Mais profundidade estratégica, mais consistência em todas as frentes.</p>
-      </div>
-      <div class="service-card">
-        <span class="service-num">05</span>
-        <h3 class="service-name">Rebranding</h3>
-        <p class="service-desc" data-pt="Tem marcas que não precisam morrer. Precisam evoluir. Para negócios com história, mas que percebem que a marca não comunica mais quem eles são." data-en="Some brands don't need to die. They need to evolve. For businesses with history that realize their brand no longer communicates who they are.">Tem marcas que não precisam morrer. Precisam evoluir. Para negócios com história, mas que percebem que a marca não comunica mais quem eles são.</p>
-      </div>
-      <div class="service-card">
-        <span class="service-num">06</span>
-        <h3 class="service-name" data-pt="Marca Master" data-en="Master Brand">Marca Master</h3>
-        <p class="service-desc" data-pt="Para quem quer construir algo que dure. Um trabalho completo de posicionamento, conceito e expressão visual, onde nada é criado sem intenção e nada fica sem resposta estratégica." data-en="For those building something meant to last. A complete work of positioning, concept and visual expression, where nothing is created without intention and nothing lacks strategic grounding.">Para quem quer construir algo que dure. Um trabalho completo de posicionamento, conceito e expressão visual, onde nada é criado sem intenção e nada fica sem resposta estratégica.</p>
-      </div>
-      <div class="service-card" style="display:flex;align-items:center;justify-content:center;min-height:180px;">
-        <a href="#contact" class="hero-cta" style="border-bottom:none;padding:0;">
-          <span data-pt="Falar sobre seu projeto" data-en="Talk about your project">Falar sobre seu projeto</span>
-          <svg viewBox="0 0 24 24" stroke-width="1.5" style="width:14px;height:14px;stroke:currentColor;fill:none"><path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
+      <div class="service-card"><span class="service-num">01</span><h3 class="service-name" data-pt="Diagnóstico de Marca" data-en="Brand Diagnosis">Diagnóstico de Marca</h3><p class="service-desc" data-pt="Antes de mudar, entender. Um olhar externo e honesto sobre o que a sua marca comunica hoje, e o que ela deveria comunicar. O ponto de partida para qualquer decisão estratégica." data-en="Before changing, understanding. An honest external look at what your brand communicates today, and what it should. The starting point for any strategic decision.">Antes de mudar, entender. Um olhar externo e honesto sobre o que a sua marca comunica hoje, e o que ela deveria comunicar. O ponto de partida para qualquer decisão estratégica.</p></div>
+      <div class="service-card"><span class="service-num">02</span><h3 class="service-name">Naming</h3><p class="service-desc" data-pt="O nome é o primeiro ativo da sua marca. Aqui ele é tratado como estratégia, não como brainstorm. Pesquisa, conceito e uma entrega que você vai querer registrar." data-en="The name is your brand's first asset. Here it's treated as strategy, not a brainstorm. Research, concept and a delivery you'll want to trademark.">O nome é o primeiro ativo da sua marca. Aqui ele é tratado como estratégia, não como brainstorm. Pesquisa, conceito e uma entrega que você vai querer registrar.</p></div>
+      <div class="service-card"><span class="service-num">03</span><h3 class="service-name" data-pt="Marca Essencial" data-en="Essential Brand">Marca Essencial</h3><p class="service-desc" data-pt="Para quem está começando e quer construir certo desde o início. Uma base estratégica e visual sólida, feita para crescer junto com o negócio." data-en="For those starting out and wanting to build it right from day one. A solid strategic and visual foundation, made to grow with the business.">Para quem está começando e quer construir certo desde o início. Uma base estratégica e visual sólida, feita para crescer junto com o negócio.</p></div>
+      <div class="service-card"><span class="service-num">04</span><h3 class="service-name" data-pt="Marca Intermediária" data-en="Intermediate Brand">Marca Intermediária</h3><p class="service-desc" data-pt="Para negócios que já existem, já vendem, mas sentem que a marca não acompanhou a evolução. Mais profundidade estratégica, mais consistência em todas as frentes." data-en="For businesses that already exist, already sell, but feel the brand hasn't kept up with their growth. More strategic depth, more consistency across the board.">Para negócios que já existem, já vendem, mas sentem que a marca não acompanhou a evolução. Mais profundidade estratégica, mais consistência em todas as frentes.</p></div>
+      <div class="service-card"><span class="service-num">05</span><h3 class="service-name">Rebranding</h3><p class="service-desc" data-pt="Tem marcas que não precisam morrer. Precisam evoluir. Para negócios com história, mas que percebem que a marca não comunica mais quem eles são." data-en="Some brands don't need to die. They need to evolve. For businesses with history that realize their brand no longer communicates who they are.">Tem marcas que não precisam morrer. Precisam evoluir. Para negócios com história, mas que percebem que a marca não comunica mais quem eles são.</p></div>
+      <div class="service-card"><span class="service-num">06</span><h3 class="service-name" data-pt="Marca Master" data-en="Master Brand">Marca Master</h3><p class="service-desc" data-pt="Para quem quer construir algo que dure. Um trabalho completo de posicionamento, conceito e expressão visual, onde nada é criado sem intenção e nada fica sem resposta estratégica." data-en="For those building something meant to last. A complete work of positioning, concept and visual expression, where nothing is created without intention and nothing lacks strategic grounding.">Para quem quer construir algo que dure. Um trabalho completo de posicionamento, conceito e expressão visual, onde nada é criado sem intenção e nada fica sem resposta estratégica.</p></div>
+      <div class="service-card" style="display:flex;align-items:center;justify-content:center;min-height:180px;"><a href="#contact" class="hero-cta" style="border-bottom:none;padding:0;"><span data-pt="Falar sobre seu projeto" data-en="Talk about your project">Falar sobre seu projeto</span><svg viewBox="0 0 24 24" stroke-width="1.5" style="width:14px;height:14px;stroke:currentColor;fill:none"><path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+    </div>
+  </section>
+
+  <div class="section-line"></div>
+
+  <!-- LOGOFOLIO CAROUSEL -->
+  <section id="work" style="padding:0;overflow:hidden;">
+    <div class="logofolio-header">
+      <p class="logofolio-quote" data-pt="A marca certa não atrai mais clientes. Atrai os clientes certos." data-en="The right brand doesn't attract more clients. It attracts the right ones.">A marca certa não atrai mais clientes. Atrai os clientes certos.</p>
+    </div>
+    <div class="carousel-track-wrap">
+      <div class="carousel-track">
+        <img src="images/alvanir.svg"   alt="Alvanir"    class="carousel-logo" style="width:160px;height:36px;">
+        <img src="images/dfk.svg"       alt="DFK"        class="carousel-logo" style="width:131px;height:44px;">
+        <img src="images/dmfc.svg"      alt="DMFC"       class="carousel-logo" style="width:44px;height:44px;">
+        <img src="images/sara.svg"      alt="Sara"       class="carousel-logo" style="width:160px;height:31px;">
+        <img src="images/afeto.svg"     alt="Afeto"      class="carousel-logo" style="width:99px;height:44px;">
+        <img src="images/alicerce.svg"  alt="Alicerce"   class="carousel-logo" style="width:160px;height:23px;">
+        <img src="images/dtbjj.svg"     alt="DTBJJ"      class="carousel-logo" style="width:44px;height:44px;">
+        <img src="images/frame.svg"     alt="Frame"      class="carousel-logo" style="width:160px;height:37px;">
+        <img src="images/gex.svg"       alt="GEX"        class="carousel-logo" style="width:160px;height:16px;">
+        <img src="images/ica25anos.svg" alt="ICA 25"     class="carousel-logo" style="width:114px;height:44px;">
+        <img src="images/icabjj.svg"    alt="ICABJJ"     class="carousel-logo" style="width:160px;height:26px;">
+        <img src="images/mce.svg"       alt="MCE"        class="carousel-logo" style="width:160px;height:20px;">
+        <img src="images/paceframe.svg" alt="Paceframe"  class="carousel-logo" style="width:160px;height:26px;">
+        <!-- duplicate for seamless loop -->
+        <img src="images/alvanir.svg"   alt="Alvanir"    class="carousel-logo" style="width:160px;height:36px;">
+        <img src="images/dfk.svg"       alt="DFK"        class="carousel-logo" style="width:131px;height:44px;">
+        <img src="images/dmfc.svg"      alt="DMFC"       class="carousel-logo" style="width:44px;height:44px;">
+        <img src="images/sara.svg"      alt="Sara"       class="carousel-logo" style="width:160px;height:31px;">
+        <img src="images/afeto.svg"     alt="Afeto"      class="carousel-logo" style="width:99px;height:44px;">
+        <img src="images/alicerce.svg"  alt="Alicerce"   class="carousel-logo" style="width:160px;height:23px;">
+        <img src="images/dtbjj.svg"     alt="DTBJJ"      class="carousel-logo" style="width:44px;height:44px;">
+        <img src="images/frame.svg"     alt="Frame"      class="carousel-logo" style="width:160px;height:37px;">
+        <img src="images/gex.svg"       alt="GEX"        class="carousel-logo" style="width:160px;height:16px;">
+        <img src="images/ica25anos.svg" alt="ICA 25"     class="carousel-logo" style="width:114px;height:44px;">
+        <img src="images/icabjj.svg"    alt="ICABJJ"     class="carousel-logo" style="width:160px;height:26px;">
+        <img src="images/mce.svg"       alt="MCE"        class="carousel-logo" style="width:160px;height:20px;">
+        <img src="images/paceframe.svg" alt="Paceframe"  class="carousel-logo" style="width:160px;height:26px;">
       </div>
     </div>
   </section>
+
+  <!-- HIDDEN WORK GRID (kept for structure) -->
+  <section style="display:none;">
+    <div class="work-grid">
+      <!-- CARD 1 - large -->
+      <a href="https://www.behance.net/gallery/231082947/ICABJJ-Conceito-e-Identidade-Visual" target="_blank" class="work-card work-card--large reveal">
+        <div class="work-card-img" style="background-image:url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/a56600231082947.688255b93436f.png')">
+          <div class="work-card-placeholder">
+            <span class="wcp-num">01</span>
+            <span class="wcp-hint" data-pt="Adicione a imagem do projeto" data-en="Add project image">Adicione a imagem do projeto</span>
+          </div>
+        </div>
+        <div class="work-card-info">
+          <div>
+            <span class="work-card-tag" data-pt="Conceito &amp; Marca" data-en="Concept &amp; Brand">Conceito &amp; Marca</span>
+            <h3 class="work-card-name">ICABJJ</h3>
+          </div>
+          <svg class="work-arrow-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:16px;height:16px;flex-shrink:0;transition:all .3s ease;color:var(--muted)"><path d="M7 17L17 7M7 7h10v10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </a>
+
+      <!-- CARD 2 -->
+      <a href="https://www.behance.net/gallery/231082303/Seminario-Alicerce-Identidade-Visual" target="_blank" class="work-card reveal" style="transition-delay:.1s">
+        <div class="work-card-img" style="background-image:url('https://mir-s3-cdn-cf.behance.net/projects/404/534fe3231082303.Y3JvcCwzODMwLDI5OTYsNzQ5LDA.png')">
+          <div class="work-card-placeholder">
+            <span class="wcp-num">02</span>
+          </div>
+        </div>
+        <div class="work-card-info">
+          <div>
+            <span class="work-card-tag" data-pt="Marca" data-en="Brand">Marca</span>
+            <h3 class="work-card-name">Seminário Alicerce</h3>
+          </div>
+          <svg class="work-arrow-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:16px;height:16px;flex-shrink:0;transition:all .3s ease;color:var(--muted)"><path d="M7 17L17 7M7 7h10v10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </a>
+
+      <!-- CARD 3 -->
+      <a href="https://www.behance.net/gallery/175103223/Identidade-Visual-Psicologa-Sara-Costa" target="_blank" class="work-card reveal" style="transition-delay:.15s">
+        <div class="work-card-img" style="background-image:url('https://mir-s3-cdn-cf.behance.net/projects/404/3f5333175103223.64ae35380ac07.jpg')">
+          <div class="work-card-placeholder">
+            <span class="wcp-num">03</span>
+          </div>
+        </div>
+        <div class="work-card-info">
+          <div>
+            <span class="work-card-tag" data-pt="Marca" data-en="Brand">Marca</span>
+            <h3 class="work-card-name">Psicóloga Sara Costa</h3>
+          </div>
+          <svg class="work-arrow-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:16px;height:16px;flex-shrink:0;transition:all .3s ease;color:var(--muted)"><path d="M7 17L17 7M7 7h10v10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </a>
+
+      <!-- CARD 4 -->
+      <a href="https://www.behance.net/gallery/131014839/Armazm-Emporio" target="_blank" class="work-card reveal" style="transition-delay:.2s">
+        <div class="work-card-img" style="background-image:url('https://mir-s3-cdn-cf.behance.net/projects/404/bb51cb131014839.Y3JvcCw2MDcsNDc0LDM5NiwxMTI.jpg')">
+          <div class="work-card-placeholder">
+            <span class="wcp-num">04</span>
+          </div>
+        </div>
+        <div class="work-card-info">
+          <div>
+            <span class="work-card-tag">Branding</span>
+            <h3 class="work-card-name">Armazém Empório</h3>
+          </div>
+          <svg class="work-arrow-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:16px;height:16px;flex-shrink:0;transition:all .3s ease;color:var(--muted)"><path d="M7 17L17 7M7 7h10v10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </a>
+
+      <!-- CARD 5 -->
+      <a href="https://www.behance.net/gallery/151724091/Identidade-Visual-Camila-Pratas-usecamilapratas" target="_blank" class="work-card reveal" style="transition-delay:.25s">
+        <div class="work-card-img" style="background-image:url('https://mir-s3-cdn-cf.behance.net/projects/404/0123bc151724091.Y3JvcCw4NjgsNjc5LDI2Niww.png')">
+          <div class="work-card-placeholder">
+            <span class="wcp-num">05</span>
+          </div>
+        </div>
+        <div class="work-card-info">
+          <div>
+            <span class="work-card-tag" data-pt="Marca" data-en="Brand">Marca</span>
+            <h3 class="work-card-name">Camila Pratas</h3>
+          </div>
+          <svg class="work-arrow-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:16px;height:16px;flex-shrink:0;transition:all .3s ease;color:var(--muted)"><path d="M7 17L17 7M7 7h10v10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </a>
+
+      <!-- CTA CARD -->
+      <a href="https://www.behance.net/leoodsgn" target="_blank" class="work-card work-card--cta reveal" style="transition-delay:.3s">
+        <div class="work-cta-inner">
+          <span class="work-cta-label" data-pt="Ver todos os projetos" data-en="See all projects">Ver todos os projetos</span>
+          <span style="font-size:24px;color:var(--accent);">↗</span>
+          <span class="work-cta-sub">Behance</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <div class="section-line"></div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label" data-num="03">
+      <span data-pt="Sobre" data-en="About">Sobre</span>
+    </div>
+    <div class="about-grid" style="">
+      <div class="about-photo reveal">
+        <img src="images/perfil.jpg" alt="Leo Azevedo" style="width:100%;height:100%;object-fit:cover;object-position:center top;" />
+      </div>
+      <div class="reveal" style="transition-delay:.1s">
+        <h2 class="about-title">
+          <span data-pt="Marca é " data-en="Brand is ">Marca é </span><em style="font-weight:600;"><span data-pt="decisão." data-en="decision.">decisão.</span></em><br>
+          <span data-pt="Não decoração." data-en="Not decoration.">Não decoração.</span>
+        </h2>
+        <p class="about-text" data-pt="Sou Leo Azevedo, Branding Designer baseado no Rio de Janeiro. Trabalho na interseção entre estratégia e estética, onde posicionamento vira forma, e forma vira reconhecimento." data-en="I'm Leo Azevedo, a Branding Designer based in Rio de Janeiro. I work at the intersection of strategy and aesthetics, where positioning becomes form, and form becomes recognition.">
+          Sou Leo Azevedo, Branding Designer baseado no Rio de Janeiro. Trabalho na interseção entre estratégia e estética, onde posicionamento vira forma, e forma vira reconhecimento.
+        </p>
+        <p class="about-text" data-pt="Acredito que toda decisão visual tem uma resposta estratégica, e que marcas bem construídas não precisam gritar para serem lembradas." data-en="I believe every visual decision has a strategic answer, and that well-built brands don't need to shout to be remembered.">
+          Acredito que toda decisão visual tem uma resposta estratégica, e que marcas bem construídas não precisam gritar para serem lembradas.
+        </p>
+      </div>
+      <div class="about-right reveal" style="transition-delay:.2s">
+
+        <div class="location-row">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span data-pt="Rio de Janeiro, Brasil" data-en="Rio de Janeiro, Brazil">Rio de Janeiro, Brasil</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-line"></div>
+
+  <div class="section-line"></div>
+
+  <section id="fale-comigo" style="background:var(--off);">
+    <div class="section-label" data-num="04"><span data-pt="Fale comigo" data-en="Get in touch">Fale comigo</span></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;">
+      <div>
+        <h2 style="font-family:var(--serif);font-size:clamp(36px,4vw,56px);font-weight:300;line-height:1;margin-bottom:24px;"><span data-pt="Conta um pouco" data-en="Tell me a little">Conta um pouco</span><br><em style="color:var(--accent);" data-pt="sobre você." data-en="about yourself.">sobre você.</em></h2>
+        <p style="font-size:13px;color:var(--light);line-height:1.9;" data-pt="Preencha o formulário e você vai direto pro meu WhatsApp. Respondo em até 24h." data-en="Fill the form and you'll go straight to my WhatsApp. I respond within 24h.">Preencha o formulário e você vai direto pro meu WhatsApp. Respondo em até 24h.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <input id="wf-nome" type="text" placeholder="Seu nome" style="background:var(--black);border:1px solid var(--border);color:var(--white);padding:16px 20px;font-family:var(--sans);font-size:13px;outline:none;transition:border .25s;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border)'" />
+        <input id="wf-negocio" type="text" placeholder="Nome do negócio" style="background:var(--black);border:1px solid var(--border);color:var(--white);padding:16px 20px;font-family:var(--sans);font-size:13px;outline:none;transition:border .25s;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border)'" />
+        <select id="wf-servico" style="background:var(--black);border:1px solid var(--border);color:var(--light);padding:16px 20px;font-family:var(--sans);font-size:13px;outline:none;-webkit-appearance:none;transition:border .25s;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border)'">
+          <option value="" disabled selected>O que você está buscando?</option>
+          <option value="Criar uma marca do zero">Criar uma marca do zero</option>
+          <option value="Evoluir uma marca existente">Evoluir uma marca existente</option>
+          <option value="Nomear um negócio">Nomear um negócio</option>
+          <option value="Não sei ainda, quero conversar">Não sei ainda, quero conversar</option>
+        </select>
+        <textarea id="wf-msg" rows="4" placeholder="Me conta um pouco mais..." style="background:var(--black);border:1px solid var(--border);color:var(--white);padding:16px 20px;font-family:var(--sans);font-size:13px;outline:none;resize:none;transition:border .25s;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border)'"></textarea>
+        <button onclick="enviarWpp()" style="background:var(--white);color:var(--black);border:none;padding:16px 32px;font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;transition:background .25s;display:flex;align-items:center;justify-content:space-between;" onmouseover="this.style.background='var(--accent)'" onmouseout="this.style.background='var(--white)'">
+          <span data-pt="Enviar pelo WhatsApp" data-en="Send via WhatsApp">Enviar pelo WhatsApp</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:16px;height:16px;"><path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-label">
+      <span data-pt="Contato" data-en="Contact">Contato</span>
+    </div>
+    <h2 class="contact-title reveal">
+      <span data-pt="Sua marca" data-en="Your brand">Sua marca</span><br>
+      <em><span data-pt="começa aqui." data-en="starts here.">começa aqui.</span></em>
+    </h2>
+    <div class="contact-links reveal" style="transition-delay:.15s">
+      <a href="https://wa.me/5538991247129" target="_blank" class="contact-btn primary" data-pt="WhatsApp" data-en="WhatsApp">WhatsApp</a>
+      <a href="https://www.linkedin.com/in/leonardoazevedobarbosa/" target="_blank" class="contact-btn secondary">LinkedIn</a>
+      <a href="https://www.behance.net/leoodsgn" target="_blank" class="contact-btn secondary">Behance</a>
+      <a href="https://instagram.com/leo.zvd" target="_blank" class="contact-btn secondary">Instagram</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="#" class="footer-logo">
+      <img src="images/logo-leoazevedo.png" alt="Leo Azevedo" style="height:11px;width:auto;opacity:.4;" />
+    </a>
+    <div class="footer-links">
+      <a href="https://www.behance.net/leoodsgn" target="_blank">Behance</a>
+      <a href="https://www.linkedin.com/in/leonardoazevedobarbosa/" target="_blank">LinkedIn</a>
+      <a href="https://instagram.com/leo.zvd" target="_blank">Instagram</a>
+    </div>
+  </footer>
+
+  <script>const cursor=document.getElementById('cursor');document.addEventListener('mousemove',e=>{cursor.style.left=e.clientX+'px';cursor.style.top=e.clientY+'px';});document.querySelectorAll('a, button').forEach(el=>{el.addEventListener('mouseenter',()=>cursor.classList.add('hover'));el.addEventListener('mouseleave',()=>cursor.classList.remove('hover'));});const revealEls=document.querySelectorAll('.reveal');const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.1});revealEls.forEach(el=>obs.observe(el));setTimeout(()=>revealEls.forEach(el=>{const rect=el.getBoundingClientRect();if(rect.top<window.innerHeight)el.classList.add('visible');}),100);let lang='pt';const toggle=document.getElementById('langToggle');toggle.addEventListener('click',()=>{lang=lang==='pt'?'en':'pt';toggle.textContent=lang==='pt'?'EN':'PT';document.querySelectorAll('[data-pt]').forEach(el=>{if(!el.children.length){el.textContent=el.getAttribute('data-'+lang);}});document.documentElement.lang=lang==='pt'?'pt-BR':'en';});
+// Count-up
+(function(){
+  function countUp(el){
+    var t=parseInt(el.dataset.target),s=el.dataset.suffix;
+    if(!t)return;
+    var c=0,timer=setInterval(function(){c++;el.textContent=c+s;if(c>=t){clearInterval(timer);el.textContent=t+s;}},Math.ceil(1500/t));
+  }
+  var o=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){countUp(x.target);o.unobserve(x.target);}});},{threshold:0.5});
+  document.querySelectorAll('.stat-num[data-target]').forEach(function(el){o.observe(el);});
+})();
+function enviarWpp(){
+  var n=document.getElementById('wf-nome').value.trim();
+  var b=document.getElementById('wf-negocio').value.trim();
+  var s=document.getElementById('wf-servico').value;
+  var m=document.getElementById('wf-msg').value.trim();
+  if(!n){alert('Por favor, informe seu nome.');return;}
+  var t='Ol%C3%A1 Leo! Me chamo *'+encodeURIComponent(n)+'*'+(b?', do neg%C3%B3cio *'+encodeURIComponent(b)+'*':'')+'.'+(s?'%0A%0A*O que busco:* '+encodeURIComponent(s):'')+(m?'%0A%0A*Mais detalhes:* '+encodeURIComponent(m):'');
+  window.open('https://wa.me/5538991247129?text='+t,'_blank');
+}
+</script>
+
+<script>
+const quoteEl = document.querySelector('.logofolio-quote');
+let currentLang = 'pt';
+let autoSwitch = true;
+let typingSpeed = 40;
+
+function typeWriter(text, callback){
+  let i = 0;
+  quoteEl.textContent = '';
+  function typing(){
+    if(i < text.length){
+      quoteEl.textContent += text.charAt(i);
+      i++;
+      setTimeout(typing, typingSpeed);
+    } else {
+      if(callback) callback();
+    }
+  }
+  typing();
+}
+
+function eraseText(callback){
+  let text = quoteEl.textContent;
+  let i = text.length;
+  function deleting(){
+    if(i > 0){
+      quoteEl.textContent = text.substring(0, i-1);
+      i--;
+      setTimeout(deleting, 20);
+    } else {
+      if(callback) callback();
+    }
+  }
+  deleting();
+}
+
+function updateQuote(lang){
+  const newText = quoteEl.dataset[lang];
+  eraseText(()=>{ typeWriter(newText); });
+}
+
+typeWriter(quoteEl.dataset.pt);
+
+setInterval(()=>{
+  if(!autoSwitch) return;
+  currentLang = currentLang === 'pt' ? 'en' : 'pt';
+  updateQuote(currentLang);
+},5000);
+
+const langBtn = document.getElementById('langToggle');
+if(langBtn){
+  langBtn.addEventListener('click', ()=>{
+    autoSwitch = false;
+    currentLang = currentLang === 'pt' ? 'en' : 'pt';
+    updateQuote(currentLang);
+    langBtn.textContent = currentLang === 'pt' ? 'EN' : 'PT';
+  });
+}
+</script>
+
+
+<script>
+const aboutPhoto = document.querySelector('.about-photo img');
+
+window.addEventListener('scroll', () => {
+  if (!aboutPhoto) return;
+
+  const rect = aboutPhoto.parentElement.getBoundingClientRect();
+  const windowHeight = window.innerHeight;
+
+  const offset = (rect.top + rect.height / 2) - (windowHeight / 2);
+  const speed = 0.06;
+
+  const translateY = offset * speed;
+
+  aboutPhoto.style.transform = `translateY(${translateY}px)`;
+});
+</script>
+
+</body>
+</html>
