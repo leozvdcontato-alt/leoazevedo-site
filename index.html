@@ -559,13 +559,13 @@
       background: var(--off)
     }
 
-.about-grid {
-  display: grid;
-  grid-template-columns: 420px minmax(0, 700px);
-  gap: 48px;
-  align-items: center;
-  justify-content: center;
-}
+    .about-grid {
+      display: grid;
+      grid-template-columns: 420px minmax(0, 700px);
+      gap: 48px;
+      align-items: center;
+      justify-content: center;
+    }
 
     .about-title {
       font-family: var(--serif);
@@ -902,75 +902,73 @@
       color: var(--muted)
     }
 
-.about-photo {
-  width: 100%;
-  max-width: 420px;
-  height: 520px;
+    .about-photo {
+      width: 100%;
+      max-width: 420px;
+      height: 520px;
 
-  border: 1px solid var(--accent);
-  border-radius: 0;
+      border: 1px solid var(--accent);
+      border-radius: 0;
 
-  overflow: hidden;
-  flex-shrink: 0;
-  background: #141414;
+      overflow: hidden;
+      flex-shrink: 0;
+      background: #141414;
 
-  position: relative;
+      position: relative;
 
-  transition: transform .5s ease, box-shadow .5s ease;
-}
+      transition: transform .5s ease, box-shadow .5s ease;
+    }
 
-.about-photo:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-}
+    .about-photo:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    }
 
-.about-photo::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.25),
-    transparent 35%
-  );
-  pointer-events: none;
-}
+    .about-photo::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top,
+          rgba(0, 0, 0, 0.25),
+          transparent 35%);
+      pointer-events: none;
+    }
 
-.about-photo img {
-  width: 100%;
-  height: 100%;
+    .about-photo img {
+      width: 100%;
+      height: 100%;
 
-  object-fit: cover;
-  object-position: center top;
+      object-fit: cover;
+      object-position: center top;
 
-  position: absolute;
-  inset: 0;
+      position: absolute;
+      inset: 0;
 
-  transition: transform .5s ease;
-  will-change: transform;
-}
+      transition: transform .5s ease;
+      will-change: transform;
+    }
 
-.about-photo:hover img {
-  transform: scale(1.03);
-}
+    .about-photo:hover img {
+      transform: scale(1.03);
+    }
 
-.about-photo-hint {
-  font-size: 10px;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-  color: var(--muted);
-  text-align: center;
-  padding: 0 24px;
-  position: relative;
-  z-index: 1;
-}
+    .about-photo-hint {
+      font-size: 10px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-align: center;
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
 
-.about-photo-icon {
-  font-size: 32px;
-  color: var(--border);
-  position: relative;
-  z-index: 1;
-}
+    .about-photo-icon {
+      font-size: 32px;
+      color: var(--border);
+      position: relative;
+      z-index: 1;
+    }
 
     .logofolio-header {
       padding: 72px 48px 56px;
@@ -1629,7 +1627,18 @@
     </div>
   </footer>
 
-  <script>const cursor = document.getElementById('cursor'); document.addEventListener('mousemove', e => { cursor.style.left = e.clientX + 'px'; cursor.style.top = e.clientY + 'px'; }); document.querySelectorAll('a, button').forEach(el => { el.addEventListener('mouseenter', () => cursor.classList.add('hover')); el.addEventListener('mouseleave', () => cursor.classList.remove('hover')); }); const revealEls = document.querySelectorAll('.reveal'); const obs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 }); revealEls.forEach(el => obs.observe(el)); setTimeout(() => revealEls.forEach(el => { const rect = el.getBoundingClientRect(); if (rect.top < window.innerHeight) el.classList.add('visible'); }), 100); let lang = 'pt'; const toggle = document.getElementById('langToggle'); toggle.addEventListener('click', () => { lang = lang === 'pt' ? 'en' : 'pt'; toggle.textContent = lang === 'pt' ? 'EN' : 'PT'; document.querySelectorAll('[data-pt]').forEach(el => { if (!el.children.length) { el.textContent = el.getAttribute('data-' + lang); } }); document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en'; });
+  <script>const cursor = document.getElementById('cursor'); document.addEventListener('mousemove', e => { cursor.style.left = e.clientX + 'px'; cursor.style.top = e.clientY + 'px'; }); document.querySelectorAll('a, button').forEach(el => { el.addEventListener('mouseenter', () => cursor.classList.add('hover')); el.addEventListener('mouseleave', () => cursor.classList.remove('hover')); }); const revealEls = document.querySelectorAll('.reveal'); const obs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 }); revealEls.forEach(el => obs.observe(el)); setTimeout(() => revealEls.forEach(el => { const rect = el.getBoundingClientRect(); if (rect.top < window.innerHeight) el.classList.add('visible'); }), 100); let lang = 'pt'; const toggle = document.getElementById('langToggle');
+toggle.addEventListener('click', () => {
+  lang = lang === 'pt' ? 'en' : 'pt';
+
+  toggle.textContent = lang === 'pt' ? 'EN' : 'PT';
+
+  document.querySelectorAll('[data-pt]').forEach(el => {
+    el.textContent = el.getAttribute('data-' + lang);
+  });
+
+  document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+});
     // Count-up
     (function () {
       function countUp(el) {
@@ -1651,66 +1660,6 @@
     }
   </script>
 
-  <script>
-    const quoteEl = document.querySelector('.logofolio-quote');
-    let currentLang = 'pt';
-    let autoSwitch = true;
-    let typingSpeed = 40;
-
-    function typeWriter(text, callback) {
-      let i = 0;
-      quoteEl.textContent = '';
-      function typing() {
-        if (i < text.length) {
-          quoteEl.textContent += text.charAt(i);
-          i++;
-          setTimeout(typing, typingSpeed);
-        } else {
-          if (callback) callback();
-        }
-      }
-      typing();
-    }
-
-    function eraseText(callback) {
-      let text = quoteEl.textContent;
-      let i = text.length;
-      function deleting() {
-        if (i > 0) {
-          quoteEl.textContent = text.substring(0, i - 1);
-          i--;
-          setTimeout(deleting, 20);
-        } else {
-          if (callback) callback();
-        }
-      }
-      deleting();
-    }
-
-    function updateQuote(lang) {
-      const newText = quoteEl.dataset[lang];
-      eraseText(() => { typeWriter(newText); });
-    }
-
-    typeWriter(quoteEl.dataset.pt);
-
-    setInterval(() => {
-      if (!autoSwitch) return;
-      currentLang = currentLang === 'pt' ? 'en' : 'pt';
-      updateQuote(currentLang);
-    }, 5000);
-
-    const langBtn = document.getElementById('langToggle');
-    if (langBtn) {
-      langBtn.addEventListener('click', () => {
-        autoSwitch = false;
-        currentLang = currentLang === 'pt' ? 'en' : 'pt';
-        updateQuote(currentLang);
-        langBtn.textContent = currentLang === 'pt' ? 'EN' : 'PT';
-      });
-    }
-  </script>
-  
 </body>
 
 </html>
