@@ -902,58 +902,75 @@
       color: var(--muted)
     }
 
-    .about-photo {
-      width: 260px;
-      height: 260px;
-      border-radius: 50%;
-      overflow: hidden;
-      border: 2px solid var(--accent);
-      flex-shrink: 0;
-      background: #141414
-    }
+.about-photo {
+  width: 100%;
+  max-width: 420px;
+  height: 520px;
 
-    .about-photo:hover {
-      transform: scale(1.03);
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-    }
+  border: 1px solid var(--accent);
+  border-radius: 0;
 
-    .about-photo::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent 40%);
-      pointer-events: none;
-    }
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #141414;
 
-    .about-photo img {
-      width: 100%;
-      height: 110%;
-      object-fit: cover;
-      object-position: top;
-      position: absolute;
-      top: 0;
-      left: 0;
-      transition: transform .1s linear;
-      will-change: transform;
-    }
+  position: relative;
 
-    .about-photo-hint {
-      font-size: 10px;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      color: var(--muted);
-      text-align: center;
-      padding: 0 24px;
-      position: relative;
-      z-index: 1
-    }
+  transition: transform .5s ease, box-shadow .5s ease;
+}
 
-    .about-photo-icon {
-      font-size: 32px;
-      color: var(--border);
-      position: relative;
-      z-index: 1
-    }
+.about-photo:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.about-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.25),
+    transparent 35%
+  );
+  pointer-events: none;
+}
+
+.about-photo img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center top;
+
+  position: absolute;
+  inset: 0;
+
+  transition: transform .5s ease;
+  will-change: transform;
+}
+
+.about-photo:hover img {
+  transform: scale(1.03);
+}
+
+.about-photo-hint {
+  font-size: 10px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-align: center;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-photo-icon {
+  font-size: 32px;
+  color: var(--border);
+  position: relative;
+  z-index: 1;
+}
 
     .logofolio-header {
       padding: 72px 48px 56px;
