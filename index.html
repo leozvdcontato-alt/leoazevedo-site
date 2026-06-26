@@ -1710,26 +1710,7 @@
       });
     }
   </script>
-
-
-  <script>
-    const aboutPhoto = document.querySelector('.about-photo img');
-
-    window.addEventListener('scroll', () => {
-      if (!aboutPhoto) return;
-
-      const rect = aboutPhoto.parentElement.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-
-      const offset = (rect.top + rect.height / 2) - (windowHeight / 2);
-      const speed = 0.06;
-
-      const translateY = offset * speed;
-
-      aboutPhoto.style.transform = `translateY(${translateY}px)`;
-    });
-  </script>
-
+  
 </body>
 
 </html>
