@@ -1,4 +1,9 @@
 (()=>{
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  if (!location.hash) {
+    window.scrollTo(0, 0);
+    window.addEventListener('load', () => window.scrollTo(0, 0), { once: true });
+  }
   const phone='5538991247129';
   const base='Olá Leo! Vim pelo seu site e quero conversar sobre um projeto de marca.';
   const qs=new URLSearchParams(location.search);
