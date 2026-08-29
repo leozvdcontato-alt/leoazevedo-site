@@ -313,3 +313,34 @@ footer{background:#070c15}
 @media(max-width:640px){
   .brand-logo img{height:19px}
 }
+
+/* Integrate header with hero */
+.site-header{
+  background:rgba(8,14,27,.92);
+  border-bottom:1px solid rgba(255,255,255,.08);
+  box-shadow:none;
+  -webkit-backdrop-filter:blur(16px);
+  backdrop-filter:blur(16px);
+}
+.site-header .brand-logo img{
+  filter:invert(1);
+}
+.site-header nav a{
+  color:#aab6ca;
+}
+.site-header nav a:hover{
+  color:#fff;
+}
+.site-header .btn-small{
+  background:linear-gradient(135deg,#315fe8,#264dc4);
+  color:#fff;
+  box-shadow:0 8px 24px rgba(49,95,232,.22);
+}
+.site-header .btn-small:hover{
+  background:linear-gradient(135deg,#3a69f0,#2b54d0);
+}
+@media(max-width:640px){
+  .site-header{
+    background:rgba(8,14,27,.96);
+  }
+}
