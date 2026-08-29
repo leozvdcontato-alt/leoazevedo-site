@@ -344,3 +344,7 @@ footer{background:#070c15}
     background:rgba(8,14,27,.96);
   }
 }
+.footer-brand{display:flex;flex-direction:column;align-items:flex-start;gap:5px}
+.footer-brand img{height:20px;width:auto;filter:invert(1);display:block}
+.footer-brand span{display:block;color:#718096;font-size:12px;margin-top:0}
+@media(max-width:640px){.footer-brand img{height:18px}}
