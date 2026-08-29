@@ -279,3 +279,34 @@ footer{background:#070c15}
  .process:before{display:none}
  .hero h1{font-weight:600}
 }
+/* Contrast and logo fix */
+.brand-logo{
+  background:#fff;
+  border-radius:4px;
+  overflow:hidden;
+}
+.brand-logo img{
+  height:22px;
+  width:auto;
+  display:block;
+  filter:invert(1);
+  mix-blend-mode:multiply;
+}
+.brand-proof{
+  background:#f7f8fa;
+  border-top:1px solid #eceff3;
+  border-bottom:1px solid #e4e7ec;
+}
+.brand-proof .section-kicker{
+  color:#7d889a;
+}
+.brand-item img{
+  filter:brightness(0) saturate(100%);
+  opacity:.72;
+}
+.brand-item img:hover{
+  opacity:.95;
+}
+@media(max-width:640px){
+  .brand-logo img{height:19px}
+}
