@@ -426,3 +426,42 @@ body{background:var(--surface)}
 footer{background:#080c0a}
 a:focus-visible{outline-color:#c66b48}
 .mobile-cta{background:#f8f6f0}
+
+/* Forest green accents layered into the heritage palette */
+:root{
+  --forest:#314438;
+  --forest-deep:#1d2b24;
+  --forest-soft:#dfe4dc;
+}
+.hero{
+  background:
+    radial-gradient(circle at 78% 20%,rgba(73,101,83,.30),transparent 32%),
+    radial-gradient(circle at 92% 72%,rgba(184,92,56,.10),transparent 28%),
+    linear-gradient(135deg,#0b100e 0%,#152019 58%,#26382d 100%);
+}
+.hero-trust strong{color:#e7e2d6}
+.hero-trust span{color:#9da99f}
+.hero-card{border:1px solid rgba(49,68,56,.12)}
+.brand-proof{border-top:3px solid var(--forest)}
+.benefit-card:nth-child(2){border-top:3px solid var(--forest)}
+.service:nth-child(even) .service-number{color:var(--forest)}
+.service-tag{background:var(--forest-soft);color:var(--forest-deep)}
+.process .section-kicker{color:var(--forest)}
+.steps article:nth-child(even)>span{color:var(--forest)}
+.case-card:nth-child(2) .case-visual{
+  background:
+    radial-gradient(circle at 50% 35%,rgba(184,92,56,.10),transparent 44%),
+    #1d2b24;
+}
+.about-points span{
+  background:#e2e5df;
+  border-color:#d1d7cf;
+  color:#314438;
+}
+.final-cta{
+  background:
+    radial-gradient(circle at 18% 15%,rgba(62,86,70,.32),transparent 31%),
+    radial-gradient(circle at 82% 5%,rgba(184,92,56,.13),transparent 28%),
+    #0b100e;
+}
+.footer-links a:hover{color:#d2a38e}
