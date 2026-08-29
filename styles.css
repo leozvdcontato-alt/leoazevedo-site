@@ -348,3 +348,81 @@ footer{background:#070c15}
 .footer-brand img{height:20px;width:auto;filter:invert(1);display:block}
 .footer-brand span{display:block;color:#718096;font-size:12px;margin-top:0}
 @media(max-width:640px){.footer-brand img{height:18px}}
+
+/* Heritage tech palette: charcoal, forest and burnt copper */
+:root{
+  --ink:#0c1110;
+  --ink-2:#18201c;
+  --text:#202521;
+  --muted:#716e66;
+  --line:#dedbd2;
+  --surface:#f8f6f0;
+  --soft:#efede6;
+  --blue:#b85c38;
+  --blue-dark:#96462c;
+  --cyan:#ead9cc;
+  --cream:#f3f0e8;
+  --shadow:0 18px 60px rgba(25,31,27,.11);
+}
+body{background:var(--surface)}
+.site-header{
+  background:rgba(12,17,16,.94);
+  border-bottom-color:rgba(218,208,190,.10);
+}
+.site-header nav a{color:#b8b5aa}
+.site-header nav a:hover{color:#f6f2e8}
+.site-header .btn-small{
+  background:linear-gradient(135deg,#b85c38,#91442c);
+  box-shadow:0 8px 24px rgba(184,92,56,.18);
+}
+.site-header .btn-small:hover{background:linear-gradient(135deg,#c66843,#a14d31)}
+.hero{
+  background:
+    radial-gradient(circle at 82% 18%,rgba(86,105,78,.20),transparent 30%),
+    linear-gradient(135deg,#0b100e 0%,#131b17 58%,#202a23 100%);
+}
+.hero:after{
+  background:radial-gradient(circle,rgba(184,92,56,.16),transparent 66%);
+}
+.hero h1 span{color:#c8b5a4}
+.hero .eyebrow{color:#cf7957}
+.hero-lead{color:#c3c0b7}
+.hero-card{background:#f5f1e8}
+.hero-card-label{color:#b85c38}
+.check-list svg{stroke:#b85c38}
+.btn-primary{
+  background:linear-gradient(135deg,#b85c38,#99482e);
+  box-shadow:0 9px 28px rgba(184,92,56,.22);
+}
+.btn-primary:hover{
+  background:linear-gradient(135deg,#c46743,#a14c31);
+  box-shadow:0 11px 30px rgba(184,92,56,.27);
+}
+.brand-proof{background:#f3f0e8;border-color:#dedbd2}
+.brand-proof .section-kicker,.center{color:#817c70}
+.services{background:#ece9e1}
+.service-list,.benefit-card,.case-card{background:#f8f6f0}
+.inline-cta{
+  background:linear-gradient(120deg,#eadbd0,#f1e8df);
+  border-color:#dfc9b9;
+}
+.process{background:#f8f6f0}
+.cases{background:#eeebe3}
+.case-visual{
+  background:
+    radial-gradient(circle at 50% 35%,rgba(184,92,56,.12),transparent 44%),
+    #111815;
+}
+.about{background:#f8f6f0}
+.about-points span{background:#ece9e1}
+.final-cta{
+  background:
+    radial-gradient(circle at 50% 0,rgba(184,92,56,.14),transparent 38%),
+    #0b100e;
+}
+.light{color:#cf7957}
+.final-cta p{color:#bbb8af}
+.final-note{color:#77786f}
+footer{background:#080c0a}
+a:focus-visible{outline-color:#c66b48}
+.mobile-cta{background:#f8f6f0}
