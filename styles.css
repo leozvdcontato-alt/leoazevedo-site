@@ -219,3 +219,63 @@ a:focus-visible{outline:3px solid #60a5fa;outline-offset:4px}
 .project-principles{grid-template-columns:1fr}.project-cta{padding:64px 0 100px}.project-cta-grid{align-items:flex-start;flex-direction:column;gap:28px}
 .project-next-inner{align-items:flex-start;flex-direction:column}
 }
+/* Elegant tech refinement */
+:root{
+  --ink:#0a1020;
+  --ink-2:#151d31;
+  --soft:#f5f7fa;
+  --blue:#315fe8;
+  --blue-dark:#2449bc;
+  --cream:#f8f7f3;
+  --radius:14px;
+}
+.brand-logo{display:flex;align-items:center;text-decoration:none}
+.brand-logo img{height:22px;width:auto;display:block;filter:brightness(0)}
+.site-header{background:rgba(255,255,255,.88);border-bottom-color:rgba(15,23,42,.08)}
+.hero{background:
+radial-gradient(circle at 82% 14%,rgba(67,101,205,.22),transparent 28%),
+linear-gradient(135deg,#080e1b 0%,#10182a 58%,#14213a 100%)}
+.hero:before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,#000,transparent 75%);pointer-events:none}
+.hero h1{font-weight:600;letter-spacing:-.052em}
+.hero h1 span{font-weight:500;color:#b9c9f5}
+.hero-lead{font-weight:400;color:#b7c1d2}
+.hero-card{border:1px solid rgba(255,255,255,.18);box-shadow:0 28px 80px rgba(0,0,0,.22);border-radius:16px}
+.btn{border-radius:7px}
+.btn-primary{background:linear-gradient(135deg,#315fe8,#264dc4);box-shadow:0 9px 28px rgba(49,95,232,.22)}
+.btn-dark{background:linear-gradient(135deg,#11192a,#090f1c)}
+.brand-proof{padding-top:42px;padding-bottom:48px}
+.brand-item img{opacity:.62}
+.section{padding-top:116px;padding-bottom:116px}
+.section-kicker{letter-spacing:.18em;font-size:10px}
+h2{font-weight:600;letter-spacing:-.045em}
+.benefit-card{border-color:#e7e9ee;border-radius:12px;padding:34px}
+.benefit-card h3{font-weight:600}
+.services{background:linear-gradient(180deg,#f7f8fa,#f3f5f8)}
+.service-list{border-radius:12px}
+.service{padding-top:34px;padding-bottom:34px}
+.service h3{font-weight:600}
+.inline-cta{background:linear-gradient(120deg,#e9eefb,#f3f5fb);border:1px solid #dfe5f3;border-radius:12px}
+.process{position:relative}
+.process:before{content:'';position:absolute;left:50%;top:80px;bottom:80px;width:1px;background:linear-gradient(transparent,#e6e9ef 15%,#e6e9ef 85%,transparent)}
+.steps h3{font-weight:600}
+.cases{background:#f8f7f4}
+.case-card{border-radius:12px}
+.case-visual{background:
+radial-gradient(circle at 50% 35%,rgba(73,105,196,.14),transparent 45%),
+#0b1220}
+.case-copy h3{font-weight:600}
+.about-photo{border-radius:12px;box-shadow:0 24px 60px rgba(15,23,42,.10)}
+.about-copy h2{font-weight:600}
+.final-cta{background:
+radial-gradient(circle at 50% 0,rgba(54,89,190,.20),transparent 38%),
+#090f1b}
+.final-cta h2{font-weight:600}
+footer{background:#070c15}
+.project-title{font-weight:600}
+.project-stage{background:radial-gradient(circle at center,rgba(66,96,184,.16),transparent 35%),#0a1020}
+@media(max-width:640px){
+ .brand-logo img{height:19px}
+ .section{padding-top:78px;padding-bottom:78px}
+ .process:before{display:none}
+ .hero h1{font-weight:600}
+}
