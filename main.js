@@ -59,6 +59,44 @@
     document.head.appendChild(profileStyle);
   }
 
+  const finalCtaStyle=document.createElement('style');
+  finalCtaStyle.textContent=`
+    .final-cta{
+      position:relative;
+      overflow:hidden;
+      background:
+        radial-gradient(circle at 50% -10%,rgba(184,92,56,.11),transparent 36%),
+        linear-gradient(180deg,#f3efe6 0%,#e8e2d6 100%) !important;
+      color:#1d2b24 !important;
+      border-top:1px solid #d4ccbf;
+    }
+    .final-cta::before{
+      content:'';
+      position:absolute;
+      left:50%;
+      top:0;
+      width:220px;
+      height:3px;
+      transform:translateX(-50%);
+      background:#b85c38;
+    }
+    .final-cta-inner{position:relative;z-index:1}
+    .final-cta .section-kicker{color:#954a31 !important}
+    .final-cta h2{color:#162019 !important}
+    .final-cta p{color:#5f625b !important}
+    .final-note{color:#817c72 !important}
+    .final-cta .btn-white{
+      background:linear-gradient(135deg,#b85c38,#94462d) !important;
+      color:#fff !important;
+      box-shadow:0 10px 28px rgba(124,62,39,.20);
+    }
+    .final-cta .btn-white:hover{
+      background:linear-gradient(135deg,#c76844,#a14d32) !important;
+      box-shadow:0 13px 32px rgba(124,62,39,.26);
+    }
+  `;
+  document.head.appendChild(finalCtaStyle);
+
   const phone='5538991247129';
   const base='Olá Leo! Vim pelo seu site e quero conversar sobre um projeto de marca.';
   const qs=new URLSearchParams(location.search);
