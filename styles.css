@@ -281,16 +281,19 @@ footer{background:#070c15}
 }
 /* Contrast and logo fix */
 .brand-logo{
-  background:#fff;
-  border-radius:4px;
-  overflow:hidden;
+  display:flex;
+  align-items:center;
+  text-decoration:none;
+  background:transparent;
+  border-radius:0;
+  overflow:visible;
 }
 .brand-logo img{
   height:22px;
   width:auto;
   display:block;
-  filter:invert(1);
-  mix-blend-mode:multiply;
+  filter:none;
+  mix-blend-mode:normal;
 }
 .brand-proof{
   background:#f7f8fa;
