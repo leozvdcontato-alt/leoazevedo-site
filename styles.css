@@ -256,7 +256,7 @@ h2{font-weight:600;letter-spacing:-.045em}
 .service h3{font-weight:600}
 .inline-cta{background:linear-gradient(120deg,#e9eefb,#f3f5fb);border:1px solid #dfe5f3;border-radius:12px}
 .process{position:relative}
-.process:before{content:'';position:absolute;left:50%;top:80px;bottom:80px;width:1px;background:linear-gradient(transparent,#e6e9ef 15%,#e6e9ef 85%,transparent)}
+
 .steps h3{font-weight:600}
 .cases{background:#f8f7f4}
 .case-card{border-radius:12px}
@@ -276,7 +276,7 @@ footer{background:#070c15}
 @media(max-width:640px){
  .brand-logo img{height:19px}
  .section{padding-top:78px;padding-bottom:78px}
- .process:before{display:none}
+ 
  .hero h1{font-weight:600}
 }
 /* Contrast and logo fix */
