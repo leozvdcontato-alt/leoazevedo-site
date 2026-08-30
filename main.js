@@ -6,28 +6,42 @@
   }
 
   const heroTrust=document.querySelector('.hero-trust');
-  if(heroTrust){
-    heroTrust.innerHTML=`
-      <div><strong>Primeiro eu entendo o negócio</strong><span>Depois eu construo a marca</span></div>
-      <div><strong>Sem atendimento intermediado</strong><span>Você fala direto comigo</span></div>
-      <div><strong>Sem pacote pronto</strong><span>O escopo nasce do problema</span></div>
+  if(heroTrust) heroTrust.remove();
+
+  const firstStepList=document.querySelector('.hero-card .check-list');
+  if(firstStepList){
+    firstStepList.innerHTML=`
+      <li><strong>Primeiro eu entendo o negócio</strong><span>Depois eu construo a marca</span></li>
+      <li><strong>Sem atendimento intermediado</strong><span>Você fala direto comigo</span></li>
+      <li><strong>Sem pacote pronto</strong><span>O escopo nasce do problema</span></li>
     `;
-    const heroTrustStyle=document.createElement('style');
-    heroTrustStyle.textContent=`
-      .hero-trust{align-items:stretch}
-      .hero-trust div{display:flex;flex-direction:column;justify-content:flex-start;max-width:220px}
-      .hero-trust strong{font-family:var(--sans);font-size:14px;line-height:1.35;letter-spacing:0;font-weight:700;color:#f2efe8}
-      .hero-trust span{font-size:12px;line-height:1.45;color:#a7ada5;margin-top:6px}
-      @media(max-width:640px){
-        .hero-trust{grid-template-columns:1fr;gap:0}
-        .hero-trust div{max-width:none;padding:14px 0!important;border-right:0!important;border-bottom:1px solid rgba(255,255,255,.12)!important}
-        .hero-trust div:first-child{padding-top:0!important}
-        .hero-trust div:last-child{border-bottom:0!important;padding-bottom:0!important}
-        .hero-trust strong{font-size:13px}
-        .hero-trust span{font-size:11px}
+    const firstStepStyle=document.createElement('style');
+    firstStepStyle.textContent=`
+      .hero-card .check-list{margin:26px 0 28px;border-top:1px solid rgba(22,32,25,.11)}
+      .hero-card .check-list li{
+        display:block;
+        margin:0;
+        padding:15px 0;
+        border-bottom:1px solid rgba(22,32,25,.11);
+        color:inherit;
+      }
+      .hero-card .check-list strong{
+        display:block;
+        font-family:var(--sans);
+        font-size:13px;
+        line-height:1.35;
+        font-weight:700;
+        color:#162019;
+      }
+      .hero-card .check-list span{
+        display:block;
+        margin-top:4px;
+        font-size:12px;
+        line-height:1.45;
+        color:#716e66;
       }
     `;
-    document.head.appendChild(heroTrustStyle);
+    document.head.appendChild(firstStepStyle);
   }
 
   const profileImg=document.querySelector('.about-photo img');
