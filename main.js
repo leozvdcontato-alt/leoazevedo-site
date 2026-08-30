@@ -5,6 +5,31 @@
     window.addEventListener('load', () => window.scrollTo(0, 0), { once: true });
   }
 
+  const heroTrust=document.querySelector('.hero-trust');
+  if(heroTrust){
+    heroTrust.innerHTML=`
+      <div><strong>Primeiro eu entendo o negócio</strong><span>Depois eu construo a marca</span></div>
+      <div><strong>Sem atendimento intermediado</strong><span>Você fala direto comigo</span></div>
+      <div><strong>Sem pacote pronto</strong><span>O escopo nasce do problema</span></div>
+    `;
+    const heroTrustStyle=document.createElement('style');
+    heroTrustStyle.textContent=`
+      .hero-trust{align-items:stretch}
+      .hero-trust div{display:flex;flex-direction:column;justify-content:flex-start;max-width:220px}
+      .hero-trust strong{font-family:var(--sans);font-size:14px;line-height:1.35;letter-spacing:0;font-weight:700;color:#f2efe8}
+      .hero-trust span{font-size:12px;line-height:1.45;color:#a7ada5;margin-top:6px}
+      @media(max-width:640px){
+        .hero-trust{grid-template-columns:1fr;gap:0}
+        .hero-trust div{max-width:none;padding:14px 0!important;border-right:0!important;border-bottom:1px solid rgba(255,255,255,.12)!important}
+        .hero-trust div:first-child{padding-top:0!important}
+        .hero-trust div:last-child{border-bottom:0!important;padding-bottom:0!important}
+        .hero-trust strong{font-size:13px}
+        .hero-trust span{font-size:11px}
+      }
+    `;
+    document.head.appendChild(heroTrustStyle);
+  }
+
   const profileImg=document.querySelector('.about-photo img');
   if(profileImg){
     profileImg.src='/images/perfil.jpg?v=576c2fcf';
