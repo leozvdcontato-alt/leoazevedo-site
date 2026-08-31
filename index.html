@@ -20,8 +20,43 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
+  <style>
+    .hero-principles{position:relative;padding:8px 0 8px 34px;border-left:1px solid rgba(242,239,232,.18);color:#f2efe8}
+    .hero-principles-label{display:block;margin-bottom:18px;font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#cf7957}
+    .hero-principles h2{max-width:390px;margin:0 0 14px;font-size:clamp(28px,3vw,39px);line-height:1.08;color:#f2efe8}
+    .hero-principles>p{max-width:390px;margin-bottom:30px;color:#aaa99f;font-size:14px}
+    .hero-principle{display:grid;grid-template-columns:34px 1fr;gap:14px;padding:16px 0;border-top:1px solid rgba(242,239,232,.11)}
+    .hero-principle>span{font-family:var(--display);font-size:11px;font-weight:700;color:#b85c38}
+    .hero-principle strong{display:block;font-family:var(--display);font-size:15px;font-weight:600;color:#eee9df}
+    .hero-principle small{display:block;margin-top:2px;font-size:12px;color:#8f978f}
+    .instagram-bridge{display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:650px;margin-top:34px;padding-top:25px;border-top:1px solid rgba(242,239,232,.14);text-decoration:none}
+    .instagram-bridge span{display:block;margin:0 0 3px;color:#cf7957;font-size:11px;font-weight:700;letter-spacing:.08em}
+    .instagram-bridge strong{font-family:var(--display);font-size:15px;font-weight:600;color:#f2efe8}
+    .instagram-bridge b{font-size:19px;font-weight:400;color:#b85c38;transition:transform .2s}
+    .instagram-bridge:hover b{transform:translateX(4px)}
+    footer{padding:54px 0 24px!important;border-top:1px solid rgba(242,239,232,.08)}
+    .footer-inner{display:block!important}
+    .footer-top{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;padding-bottom:38px}
+    .footer-brand img{height:22px!important}
+    .footer-brand>p{max-width:430px;margin-top:18px;color:#9d9c94;font-size:14px;line-height:1.65}
+    .footer-nav{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+    .footer-column>span{display:block;margin-bottom:13px;color:#777b75!important;font-size:10px!important;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+    .footer-column a{display:block;width:max-content;margin:8px 0;color:#d7d3c9;font-size:13px;text-decoration:none}
+    .footer-column a:hover{color:#d47a4a}
+    .footer-bottom{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:20px;border-top:1px solid rgba(242,239,232,.08)}
+    .footer-bottom span,.footer-bottom a{color:#696d68;font-size:11px;text-decoration:none}
+    .footer-bottom a:hover{color:#d47a4a}
+    @media(max-width:960px){.hero-principles{max-width:620px}.footer-top{grid-template-columns:1fr;gap:36px}}
+    @media(max-width:640px){
+      .hero-principles{padding:4px 0 0;border-left:0;border-top:1px solid rgba(242,239,232,.15);padding-top:28px}
+      .instagram-bridge{align-items:flex-start}
+      .footer-nav{grid-template-columns:1fr 1fr}
+      .footer-bottom{align-items:flex-start;flex-direction:column;gap:8px}
+      footer{padding-top:44px!important}
+    }
+  </style>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Person","name":"Leo Azevedo","jobTitle":"Branding Designer","url":"https://leoazevedo.design","sameAs":["https://www.behance.net/leoodsgn","https://www.linkedin.com/in/leonardoazevedobarbosa/","https://instagram.com/leo.zvd"]}
+  {"@context":"https://schema.org","@type":"Person","name":"Leo Azevedo","jobTitle":"Branding Designer","url":"https://leoazevedo.design","sameAs":["https://www.behance.net/leoodsgn","https://instagram.com/leoazevedo.brand"]}
   </script>
 </head>
 <body>
@@ -48,24 +83,15 @@
             <a class="btn btn-primary btn-large js-whatsapp" href="#" data-cta="hero">Quero melhorar minha marca</a>
             <a class="text-link" href="#cases">Ver projetos selecionados</a>
           </div>
-          <div class="hero-trust">
-            <div><strong>5+</strong><span>anos de experiência</span></div>
-            <div><strong>20+</strong><span>marcas desenvolvidas</span></div>
-            <div><strong>100%</strong><span>atendimento remoto</span></div>
-          </div>
         </div>
 
-        <aside class="hero-card" aria-label="Como funciona o primeiro contato">
-          <span class="hero-card-label">Primeiro passo</span>
-          <h2>Me conte onde sua marca está hoje.</h2>
-          <p>Você não precisa chegar com um briefing pronto. Eu começo entendendo o negócio, o momento e o que precisa mudar.</p>
-          <ul class="check-list">
-            <li><svg viewBox="0 0 24 24"><path d="M5 12.5l4 4L19 7"/></svg>Sem compromisso na primeira conversa</li>
-            <li><svg viewBox="0 0 24 24"><path d="M5 12.5l4 4L19 7"/></svg>Direcionamento para o escopo certo</li>
-            <li><svg viewBox="0 0 24 24"><path d="M5 12.5l4 4L19 7"/></svg>Atendimento direto comigo</li>
-          </ul>
-          <a class="btn btn-primary btn-block js-whatsapp" href="#" data-cta="hero-card">Conversar no WhatsApp</a>
-          <small>Normalmente respondo em horário comercial.</small>
+        <aside class="hero-principles" aria-label="Como eu trabalho">
+          <span class="hero-principles-label">Como eu trabalho</span>
+          <h2>Marca não começa pelo desenho.</h2>
+          <p>Antes de decidir como sua empresa vai parecer, eu preciso entender o que ela precisa comunicar.</p>
+          <div class="hero-principle"><span>01</span><div><strong>Primeiro eu entendo o negócio</strong><small>Depois eu construo a marca.</small></div></div>
+          <div class="hero-principle"><span>02</span><div><strong>Você fala direto comigo</strong><small>Sem atendimento intermediado.</small></div></div>
+          <div class="hero-principle"><span>03</span><div><strong>O escopo nasce do problema</strong><small>Sem pacote pronto.</small></div></div>
         </aside>
       </div>
     </section>
@@ -210,6 +236,9 @@
           <div class="about-points">
             <span>Estratégia de marca</span><span>Posicionamento</span><span>Identidade visual</span><span>Naming</span>
           </div>
+          <a class="instagram-bridge" href="https://instagram.com/leoazevedo.brand" target="_blank" rel="noopener noreferrer" aria-label="Acompanhar Leo Azevedo no Instagram">
+            <div><span>@leoazevedo.brand</span><strong>Conteúdo sobre marca, percepção e posicionamento</strong></div><b>→</b>
+          </a>
         </div>
       </div>
     </section>
@@ -236,11 +265,30 @@
 
   <footer>
     <div class="container footer-inner">
-      <div class="footer-brand"><img src="/images/logo-leoazevedo.png" alt="Leo Azevedo"><span>Branding & Estratégia de Marca</span></div>
-      <div class="footer-links">
-        <a href="https://www.behance.net/leoodsgn" target="_blank" rel="noopener noreferrer">Behance</a>
-        <a href="https://www.linkedin.com/in/leonardoazevedobarbosa/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://instagram.com/leo.zvd" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="/images/logo-leoazevedo.png" alt="Leo Azevedo">
+          <span>Branding & Estratégia de Marca</span>
+          <p>Estratégia, posicionamento e identidade para empresas que precisam ser percebidas à altura do negócio que construíram.</p>
+        </div>
+        <div class="footer-nav">
+          <div class="footer-column">
+            <span>Navegação</span>
+            <a href="#servicos">Serviços</a>
+            <a href="#processo">Processo</a>
+            <a href="#cases">Cases</a>
+            <a href="#contato">Contato</a>
+          </div>
+          <div class="footer-column">
+            <span>Onde me encontrar</span>
+            <a href="https://instagram.com/leoazevedo.brand" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.behance.net/leoodsgn" target="_blank" rel="noopener noreferrer">Behance</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Leo Azevedo. Branding & Estratégia de Marca.</span>
+        <a href="https://instagram.com/leoazevedo.brand" target="_blank" rel="noopener noreferrer">@leoazevedo.brand</a>
       </div>
     </div>
   </footer>
