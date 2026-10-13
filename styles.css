@@ -1,3 +1,4 @@
+:root{--ink:#0c1110;--ink-2:#18201c;--text:#202521;--muted:#716e66;--line:#dedbd2;--surface:#f8f6f0;--soft:#efede6;--accent:#b85c38;--accent-dark:#96462c;--cyan:#ead9cc;--cream:#f3f0e8;--green:#20b858;--forest:#314438;--forest-deep:#1d2b24;--forest-soft:#dfe4dc;--radius:14px;--shadow:0 18px 60px rgba(25,31,27,.11);--sans:'DM Sans',Arial,sans-serif;--display:'Manrope',Arial,sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:92px}
 body{font-family:var(--sans);color:var(--text);background:var(--surface);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
