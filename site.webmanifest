@@ -1,0 +1,16 @@
+{
+  "name": "Leo Azevedo | Branding & Estratégia",
+  "short_name": "Leo Azevedo",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b1010",
+  "theme_color": "#0b1010",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "/images/simbolo-leoazevedo.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}
